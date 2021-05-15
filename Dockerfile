@@ -12,5 +12,5 @@ RUN echo "**** install Python ****" && \
     pip3 install --no-cache --upgrade pip setuptools wheel && \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
     echo "**** run bot ****" && \
-    pip install . && \
+    pip install ./ && \
     forwardscoverbot
